@@ -1,0 +1,33 @@
+.toolbar {
+  position: relative;
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  background-color: #e0e0e0;
+
+  &__tool {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    vertical-align: baseline;
+    transition: color .5s ease, background-color .5s ease;
+
+    &:hover {
+      color: #fff;
+      background-color: #673ab7;
+    }
+
+    & i {
+      pointer-events: none;
+    }
+  }
+}
