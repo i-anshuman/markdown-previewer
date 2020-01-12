@@ -1,0 +1,23 @@
+@import '../App';
+
+.editor-wrapper {
+  @extend .wrapper;
+
+  .editor__titlebar {
+    @extend .titlebar;
+  }
+
+  .editor {
+    width: 100%;
+    height: calc(100% - 80px);
+    position: relative;
+    resize: none;
+    outline: none;
+    border: none;
+    white-space: nowrap;
+    border-top: 2px solid #e0e0e0;
+    padding: 6px 8px;
+    font-size: 14px;
+    font-family: 'Roboto Mono', monospace;
+  }
+}
