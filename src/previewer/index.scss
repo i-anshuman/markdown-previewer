@@ -1,0 +1,18 @@
+@import '../App';
+
+.previewer-wrapper {
+  @extend .wrapper;
+
+  .previewer__titlebar {
+    @extend .titlebar;
+  }
+
+  .previewer__body {
+    width: 100%;
+    height: calc(100% - 40px);
+    position: relative;
+    border-top: 2px solid #e0e0e0;
+    padding: 6px 8px;
+    overflow: auto;
+  }
+}
